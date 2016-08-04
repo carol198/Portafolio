@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Developer web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
+        <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+
+        <style>
+			body{
+				background:#333 url(bg.jpg) no-repeat top left;
+				font-family:Arial;
+				background-size: 100%;
+			}
+			span.reference{
+				position:fixed;
+				left:10px;
+				bottom:10px;
+				font-size:12px;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			ul.sdt_menu{
+				margin-top:150px;
+			}
+			h1.title{
+				text-indent:-9000px;
+				background:transparent url(title.png) no-repeat top left;
+				background-size: 30%;
+				width:633px;
+				height:100px;
+			}
+		</style>
+    </head>
+    <body>
+    	<header>
+			<nav class="navbar navbar-inverse">
+			  <div class="container">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="TRUE">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <div class="logo"><img src="title.png" alt=""></div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="index.html">Home</a></li>
+					<li><a href="acerca.html">Acerca</a></li>
+					<li><a href="portafolio.html">Portafolio</a></li>
+					<li><a href="habilidades.html">Habilidades</a></li>
+					<li><a href="equipo.html">Equipo</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+			        <li class="dropdown">
+			          <ul class="dropdown-menu">
+			            <li><a href="index.html">Home</a></li>
+		            	<li><a href="acerca.html">Acerca</a></li>
+		            	<li><a href="portafolio.html">Portafolio</a></li>
+		            	<li><a href="habilidades.html">Habilidades</a></li>
+						<li><a href="equipo.html">Equipo</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		<!-- /.los habilidades -->
+		<div class="content">
+			<h2>HABILIDADES TECNICAS</h2>
+                <ul class="ca-menu">
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon"><img src="images/html.jpg" alt="" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon"><img src="images/sass.svg" alt="" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon"><img src="images/java.jpg" alt="" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon"><img src="images/jquery.png" alt="" /></span>
+                        </a>
+                    </li>
+                </ul>
+        </div><!-- content -->
+        
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-2"></div>
+        		<div class="col-md-8">
+        			<div class="row">
+                        <div class="progress texto">
+                          <div class="progress-bar progress-bar-danger" role="progressbar"
+                               aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                               style="width: 80%"><p>HTML/CSS</p>
+                            <span class="sr-only">80% completado (éxito)</span>
+                          </div>
+                        </div>
+                        <div class="progress texto">
+                          <div class="progress-bar progress-bar-success" role="progressbar"
+                               aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                               style="width: 70%"><p>SASS</p>
+                            <span class="sr-only">70% completado (éxito)</span>
+                          </div>
+                        </div>
+                        <div class="progress texto">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                               aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><p>JAVASCRIPT</p>
+                            <span class="sr-only">40% completado</span>
+                          </div>
+                        </div>
+                        <div class="progress texto">
+                          <div class="progress-bar progress-bar-info" role="progressbar"
+                               aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                               style="width: 50%"><p>JQUERY</p>
+                            <span class="sr-only">50% completado</span>
+                          </div>
+                        </div>
+                    </div>
+        		</div>
+        	</div>
+        </div>
+        
+        <footer class="text center">
+            <span class="reference text-center">
+                <a href="#">Derechos Reservados </a>
+            </span>
+		</footer>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+		</script>
+    </body>
+</html>
